@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hover project</title>
+</head>
+<style>
+    body{
+        background-color: rgb(25, 25, 25);
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        height: 100vh;
+    }
+    h1{
+        font-size: 7rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    h1{
+        color: transparent;
+        -webkit-text-stroke: 3px darkmagenta;
+        position: relative;
+    }
+    h1::before{
+        content: "ARFAT";
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        overflow: hidden;
+        color: darkmagenta;
+        border-right: 8px solid darkmagenta;
+        transition: 1s ease-in-out;
+    }
+    h1:hover::before{
+        width: 100%;
+        filter: drop-shadow(0 0 25px darkmagenta);
+    }
+</style>
+<body>
+    <h1>ARFAT</h1>
+</body>
+</html>
